@@ -2,7 +2,7 @@
   "name": "precio",
   "version": "1.0.0",
   "description": "Calculadora de precios para mayorista",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
     "serve": "http-server . -d -i -c-1",
