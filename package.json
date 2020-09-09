@@ -1,0 +1,27 @@
+{
+  "name": "precio",
+  "version": "1.0.0",
+  "description": "Calculadora de precios para mayorista",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "serve": "http-server . -d -i -c-1",
+    "package:all": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=dist && electron-packager . --overwrite --platform=win32 --arch=ia32 --out=dist && electron-packager . --overwrite --platform=win32 --arch=x64 --out=dist && electron-packager . --overwrite --platform=linux --arch=ia32 --out=dist && electron-packager . --overwrite --platform=linux --arch=x64 --out=dist",
+    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=dist",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=dist",
+    "package:win64": "electron-packager . --overwrite --platform=win32 --arch=x64 --out=dist",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=ia32 --out=dist",
+    "package:linux64": "electron-packager . --overwrite --platform=linux --arch=x64 --out=dist"
+  },
+  "keywords": [],
+  "author": "kenliten",
+  "license": "GPL-3",
+  "devDependencies": {
+    "electron": "^10.1.1"
+  },
+  "dependencies": {
+    "electron-builder": "^22.8.0",
+    "electron-packager": "^15.0.0",
+    "http-server": "^0.12.3"
+  }
+}

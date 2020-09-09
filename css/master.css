@@ -1,0 +1,36 @@
+@keyframes display{
+	from {
+		visibility: hidden;
+		display: block;
+		height: 0;
+	}
+
+	to {
+		height: auto;
+	}
+}
+
+#optional-info{
+	display: none;
+	animation: display .5s;
+}
+
+#customer-registry-modal-op{
+	bottom: 20px;
+	position: absolute;
+	right: 20px;
+}
+
+#settings-modal-op{
+	bottom: 20px;
+	left: 20px;
+	position: absolute;
+}
+
+.customer-action{
+	text-decoration: none;
+}
+
+.customer-action:hover{
+	text-decoration: none;
+}
